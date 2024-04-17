@@ -33,17 +33,17 @@
 5. **Start the server:**
    npm start
 
-# The server should now be running on http://localhost:3000.
+**The server should now be running on http://localhost:3000.**
 
 ### Usage
 
-# You can interact with the Railway Management System API using various endpoints.
+**You can interact with the Railway Management System API using various endpoints.**
 
 ### Endpoints
 
-**User Management**
+- **User Management**
 
-# POST /api/users/register: Register a new user with the following JSON payload:
+  **POST /api/users/register: Register a new user with the following JSON payload:**
 
 {
 "username": "your_username",
@@ -51,16 +51,16 @@
 "password": "your_password"
 }
 
-# POST /api/users/login: Log in an existing user with the following JSON payload:
+**POST /api/users/login: Log in an existing user with the following JSON payload:**
 
 {
 "email": "your_email@example.com",
 "password": "your_password"
 }
 
-**Admin**
+- **Admin**
 
-# POST /api/admin/trains: Add a new train (admin only) with the following JSON payload:
+**POST /api/admin/trains: Add a new train (admin only) with the following JSON payload:**
 
 {
 "source": "source_station",
@@ -68,13 +68,13 @@
 "total_seats": 100
 }
 
-**Booking**
+- **Booking**
 
-# GET /api/bookings/:bookingId: Get specific booking details.
+**GET /api/bookings/:bookingId: Get specific booking details.**
 
-# GET /api/seatsAvailability: Get seat availability between two stations.
+**GET /api/seatsAvailability: Get seat availability between two stations.**
 
-# POST /api/bookings: Book a seat on a train with the following JSON payload:
+**POST /api/bookings: Book a seat on a train with the following JSON payload:**
 
 {
 "train_id": 1,
@@ -83,4 +83,4 @@
 
 ### Contributing
 
-# Contributions are welcome! If you find any issues or have suggestions for improvement, please create a pull request or open an issue.
+**Contributions are welcome! If you find any issues or have suggestions for improvement, please create a pull request or open an issue.**
